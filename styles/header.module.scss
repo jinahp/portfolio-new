@@ -1,0 +1,83 @@
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-button {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  .icon-menu {
+    @media screen and (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.header-title-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+    justify-content: flex-end;
+  }
+}
+
+.header-button-box {
+  display: flex;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.7rem;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #0fdaf1;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
+.header-theme-box {
+  display: flex;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.header-theme-button {
+  display: flex;
+  align-items: center;
+
+  .icon-tools {
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
