@@ -1,13 +1,13 @@
+import styles from "@/styles/home.module.scss";
 import Header from "./header";
-import Introduce from "./introduce";
-import styles from "../styles/home.module.scss";
+import Main from "./main/main";
 
 export default function Home() {
   return (
     <div className={styles["home-wrapper"]}>
       <Header />
       <main>
-        <Introduce />
+        <Main />
       </main>
     </div>
   );

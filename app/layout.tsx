@@ -3,7 +3,7 @@ import { Gowun_Dodum } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "박진아의 포트폴리오",
+  title: "박진아 포트폴리오",
   description: "박진아의 웹 포트폴리오입니다.",
 };
 

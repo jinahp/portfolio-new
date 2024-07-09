@@ -33,6 +33,11 @@ a {
   cursor: pointer;
 }
 
+ul,
+li {
+  all: unset;
+}
+
 h1 {
   font-size: 3.6rem;
 }

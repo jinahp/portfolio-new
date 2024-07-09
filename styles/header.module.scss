@@ -4,20 +4,40 @@
   justify-content: space-between;
   color: #fff;
   padding: 20px 0;
+  height: 70px;
+
+  @media screen and (min-width: 768px) {
+    height: 100px;
+  }
 }
 
 .header-button {
-  display: none;
+  display: flex;
+}
+
+.icon-menu {
+  width: 20px;
+  height: 20px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-  }
+    width: 40px;
+    height: 40px;
 
-  .icon-menu {
-    @media screen and (min-width: 768px) {
-      width: 40px;
-      height: 40px;
+    &:active {
+      animation: moveRight 0.2s ease-in-out;
     }
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -25,11 +45,19 @@
   width: 100%;
   display: flex;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     gap: 20px;
     justify-content: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%);
+    transition:
+      opacity 0.4s ease,
+      transform 0.4s ease,
+      visibility 0.4s;
+    margin-right: 20px;
   }
 }
 
@@ -55,6 +83,10 @@
       color: #0fdaf1;
       border-bottom: 1px solid #fff;
     }
+
+    &:active {
+      color: #079dae;
+    }
   }
 }
 
@@ -70,14 +102,36 @@
 .header-theme-button {
   display: flex;
   align-items: center;
+}
 
-  .icon-tools {
+.icon-tools {
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width: 768px) {
     width: 20px;
     height: 20px;
-
-    @media screen and (min-width: 768px) {
-      width: 20px;
-      height: 20px;
-    }
   }
+
+  &:active {
+    animation: moveDown 0.2s ease-in-out;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
