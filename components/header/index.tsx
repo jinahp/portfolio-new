@@ -47,7 +47,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className={styles["header-title-button"]}>
-                <Link href="/projects" className={styles["header-title"]}>
+                <Link href="/my-projects" className={styles["header-title"]}>
                   프로젝트
                 </Link>
               </li>

@@ -2,8 +2,8 @@
   --max-width: 1200px;
   --border-radius: 10px;
   --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  --transition: 0.3s;
-  --primary-color: #e7c170;
+  --blue1: #0fdaf1;
+  --blue2: #079dae;
 }
 
 * {
@@ -23,6 +23,12 @@ body {
   min-width: 280px;
   min-height: 100%;
   font-size: 1.6rem;
+  padding: 0 20px;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 100px;
+  }
 }
 
 button,
@@ -58,4 +64,14 @@ h3 {
   body {
     background-color: #2c2c2c;
   }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c02c;
+  border-radius: 10px;
 }

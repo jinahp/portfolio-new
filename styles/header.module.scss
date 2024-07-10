@@ -80,12 +80,12 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: #0fdaf1;
+      color: var(--blue1);
       border-bottom: 1px solid #fff;
     }
 
     &:active {
-      color: #079dae;
+      color: var(--blue2);
     }
   }
 }

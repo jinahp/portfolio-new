@@ -1,0 +1,49 @@
+.footer-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(76, 84, 85);
+  overflow: hidden;
+}
+
+.footer-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgb(103, 152, 161) 20%,
+    rgb(36, 117, 127) 80%
+  );
+  animation: wave 5s infinite linear;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.footer-text {
+  font-size: 1.3rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.my-name {
+  font-weight: bold;
+  color: var(--blue1);
+}
